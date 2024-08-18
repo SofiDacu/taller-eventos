@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script src="./script.js"></script>
-
-    
 </head>
-<body>
-    <button class="boton" type="button" id="button" onclick="alert('Hola!')">Saludar</button>
 
+<style>
+    .colorboton{
+        padding: 5px;
+        background-color: green;
+    }
+</style>
+
+<body>
+    <div id="contenedor">
+        <button id="btn" class="colorboton" onclick="alert('Hola!'); event.stopPropagation();">Saludar</button>
+    </div>
+    
+    <script src="./eventos.js"></script>
 </body>
 </html>
