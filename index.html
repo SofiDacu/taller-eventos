@@ -11,6 +11,9 @@
         <button onclick="alert('Hola!'); event.stopPropagation();">Saludar</button>
     </div>
 
+   <!--   Al dar click en el botón, sucedía que se disparaba el evento click del div también
+      La solución para esto fue añadir event.stopPropagation(); -->
+      
     <script src="./eventos.js"></script>
 </body>
 
